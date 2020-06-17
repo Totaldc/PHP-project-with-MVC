@@ -15,21 +15,23 @@ include_once 'app/php/function.php';
 </head>
 <body>
 <header class="sticky-top">
-    <?php menu($menu); ?>
+    <?php menu($masyvas['menu']); ?>
 </header>
 <main>
+  
 <section id="gallery">
-        <?php galerija($images) ?>
+        <?php galerija($masyvas['images']) ?>
 </section>
-<section class="about">
-    <?php display_text($text_columns); ?>
+<section id="about">
+    <?php display_text($masyvas['text_columns']); ?>
 </section>
 
 <section  class= "mt-5" id="contact">
-    <?php get_form($form, 'user_name', 'user_email','textarea'); ?>
+    <?php get_form($masyvas, 'user_name', 'user_email','textarea'); ?>
 </section>
 </main>
 <script src="assets/js/jQuery.js"></script>
 <script src="assets/js/bootstrap.bundle.js"></script>
 </body>
 </html>
+

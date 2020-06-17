@@ -40,7 +40,7 @@ function display_text($arr)
       
     }elseif($key == 'right') {
       
-        print '<div class="col-8"><img src="' . $value . '" width="700" height="500px"></div>';
+        print '<div class="col-8"><img src="' . $value . '" width="200px" height="200px"></div>';
       
     }
    }
@@ -51,7 +51,7 @@ function display_text($arr)
 
 function get_form($array, $input_name1, $input_name2, $input_name3 = false)
 {   print '<div class="cointainer">';
-    print '<form class="container d-flex flex-wrap" action="app/php/404.php" method="POST" >';
+    print '<form class="container d-flex flex-wrap" method="POST">';
     foreach ($array['inputs'] as $input) {
         if ($input['name'] == $input_name1) {
             print '<input class="col-6" type="' . $input['type'] . '" placeholder="' . $input['placeholder'] . '" name="' . $input['name'] . '" >';
