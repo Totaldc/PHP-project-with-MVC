@@ -51,7 +51,7 @@ function display_text($arr)
 
 function get_form($array, $input_name1, $input_name2, $input_name3 = false)
 {   print '<div class="cointainer">';
-    print '<form class="container d-flex flex-wrap" method="POST">';
+    print '<form class="container d-flex flex-wrap" action="app/php/404.php" method="POST" >';
     foreach ($array['inputs'] as $input) {
         if ($input['name'] == $input_name1) {
             print '<input class="col-6" type="' . $input['type'] . '" placeholder="' . $input['placeholder'] . '" name="' . $input['name'] . '" >';
