@@ -39,3 +39,28 @@ $text_columns = [
 
 ];
 
+
+$form = [
+    'inputs' => [
+        'user_name' => [
+            'type' => 'text',
+            'placeholder' => 'User name:',
+            'name' => 'user_name',
+        ],
+        'user_email' => [
+            'type' => 'email',
+            'placeholder' => 'User email:',
+            'name' => 'user_email',
+        ],
+        'textarea' => [
+            'placeholder' => 'Write your text:',
+            'name' => 'textarea',
+        ],
+    ],
+    'buttons' => [
+        'send' => [
+            'type' => 'submit',
+            'value' => 'Siusti',
+        ]
+    ],
+];

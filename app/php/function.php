@@ -47,3 +47,23 @@ function display_text($arr)
   print '</div>';
   print '</div>';
 }
+
+
+function get_form($array, $input_name1, $input_name2, $input_name3 = false)
+{   print '<div class="cointainer">';
+    print '<form class="container d-flex flex-wrap" method="POST">';
+    foreach ($array['inputs'] as $input) {
+        if ($input['name'] == $input_name1) {
+            print '<input class="col-6" type="' . $input['type'] . '" placeholder="' . $input['placeholder'] . '" name="' . $input['name'] . '" >';
+        } elseif ($input['name'] == $input_name2) {
+            print '<input class="col-6" type="' . $input['type'] . '" placeholder="' . $input['placeholder'] . '" name="' . $input['name'] . '" >';
+        } elseif ($input['name'] == $input_name3) {
+            print '<textarea class="col-12" name="'. $input['name']. '" placeholder="' . $input['placeholder'] . '"></textarea>';
+        }
+    }
+    foreach ($array['buttons'] as $button) {
+        print '<input type="' . $button['type'] . '" value="' . $button['value'] . '" >';
+    }
+    print '</form>';
+    print '</div>';
+}

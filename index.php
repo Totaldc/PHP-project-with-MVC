@@ -24,6 +24,10 @@ include_once 'app/php/function.php';
 <section class="about">
     <?php display_text($text_columns); ?>
 </section>
+
+<section  class= "mt-5" id="contact">
+    <?php get_form($form, 'user_name', 'user_email','textarea'); ?>
+</section>
 </main>
 <script src="assets/js/jQuery.js"></script>
 <script src="assets/js/bootstrap.bundle.js"></script>
