@@ -21,6 +21,9 @@ include_once 'app/php/function.php';
 <section id="gallery">
         <?php galerija($images) ?>
 </section>
+<section class="about">
+    <?php display_text($text_columns); ?>
+</section>
 </main>
 <script src="assets/js/jQuery.js"></script>
 <script src="assets/js/bootstrap.bundle.js"></script>

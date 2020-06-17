@@ -26,3 +26,24 @@ function galerija($gallery)
   print '</div>';
   print '</div>';
 }
+
+
+function display_text($arr)
+{
+  print '<div class="container">';
+  print '<div class ="d-flex justify-content-center mt-5">';
+  
+  foreach ($arr as $key => $value) {
+    if($key == 'left') {
+     
+        print '<div class="col-8"><p>"' . $value . '"</p></div>';
+      
+    }elseif($key == 'right') {
+      
+        print '<div class="col-8"><img src="' . $value . '" width="700" height="500px"></div>';
+      
+    }
+   }
+  print '</div>';
+  print '</div>';
+}
